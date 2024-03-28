@@ -4,6 +4,7 @@
   padding-top: 40px;
   align-items: center;
   white-space: nowrap;
+  margin-bottom: 30px;
 }
 
 .profile__image {
@@ -13,7 +14,6 @@
   border-radius: 50%;
   background-position: center;
   margin-right: 24px;
-  margin-bottom: 30px;
 }
 
 .profile__info {
@@ -37,15 +37,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 373px;
 }
 
 .profile__edit-button {
-  background: transparent url(../images/edit-button.png) center no-repeat;
+  background: transparent url(../images/pencil.svg) center no-repeat;
   height: 24px;
   width: 24px;
   grid-area: button;
-  border: 1px white;
+  border: 1px solid #fff;
   cursor: pointer;
   transition: opacity 0.2s ease;
   margin-left: 18px;
@@ -64,15 +63,14 @@
   grid-area: description;
   margin: 0;
   width: 415px;
-  padding-bottom: 36px;
-  padding-top: 14px;
+  padding-top: 7px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .profile__add-button {
-  background: transparent url(../images/plus.png) center no-repeat;
+  background: transparent url(../images/plus.svg) center no-repeat;
   width: 150px;
   height: 50px;
   margin-left: auto;
@@ -81,6 +79,12 @@
   box-sizing: border-box;
   transition: opacity 0.2s ease;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 633px) {
+  .profile__edit-button {
+    margin-right: 10px;
+  }
 }
 
 .profile__add-button:hover {
@@ -95,6 +99,7 @@
 
   .profile__image {
     margin-right: 0;
+    padding-bottom: 30px;
   }
 
   .profile__info {
@@ -102,12 +107,15 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    padding-bottom: 36px;
+    max-width: 282px;
   }
 
   .profile__title {
     text-align: center;
     font-size: 22px;
     line-height: 1.21;
+    max-width: 320px;
     padding-right: 10px;
   }
 
@@ -118,7 +126,9 @@
   }
 
   .profile__edit-button {
-    background: transparent url(../images/edit-smallbutton.png) no-repeat center;
+    background: transparent url(../images/pencil.svg) no-repeat center;
+    background-size: 7.5px;
+    border: 1px solid #fff;
     width: 18px;
     height: 18px;
     margin: 0;
@@ -127,7 +137,7 @@
   .profile__add-button {
     width: 100%;
     max-width: 282px;
-    box-sizing: border-box;
     margin: 0;
+    background-size: 16px;
   }
 }

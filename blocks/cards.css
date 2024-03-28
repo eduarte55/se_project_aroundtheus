@@ -1,16 +1,3 @@
-.elements {
-  margin-top: 30px;
-}
-
-.elements__list {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, 282px);
-  grid-gap: 20px 17px;
-  padding: 0;
-  margin: 0;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -22,16 +9,14 @@
 .card__image {
   width: 282px;
   height: 282px;
+  object-fit: cover;
 }
 
 .card__description {
   display: flex;
   background-color: white;
   color: black;
-  padding-right: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 20px;
+  padding: 25px 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -50,10 +35,9 @@
 }
 
 .card__like-button {
-  background: transparent url(../images/heart-button.png) center no-repeat;
+  background: transparent url(../images/heart-button.svg) center no-repeat;
   width: 21px;
   height: 18px;
-  padding-left: 28px;
   justify-content: space-between;
   border: none;
   cursor: pointer;
