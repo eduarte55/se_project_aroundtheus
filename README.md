@@ -28,6 +28,8 @@ https://github.com/eduarte55/se_project_aroundtheus
 
 # Video Link
 
+https://drive.google.com/file/d/1Jnpu42sKRY7VoH-zD3jon9r2sJpMO3I5/view?usp=drive_link
+
 # Pages
 
 # Figma

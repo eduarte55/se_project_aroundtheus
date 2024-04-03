@@ -62,7 +62,8 @@
   font-weight: 400;
   grid-area: description;
   margin: 0;
-  width: 415px;
+  max-width: 415px;
+  width: 100%;
   padding-top: 7px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -81,7 +82,7 @@
   border-radius: 2px;
 }
 
-@media screen and (min-width: 633px) {
+@media screen and (min-width: 633px) and (max-width: 756px) {
   .profile__edit-button {
     margin-right: 10px;
   }
@@ -99,7 +100,7 @@
 
   .profile__image {
     margin-right: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .profile__info {
@@ -115,7 +116,7 @@
     text-align: center;
     font-size: 22px;
     line-height: 1.21;
-    max-width: 320px;
+    max-width: 250px;
     padding-right: 10px;
   }
 
@@ -123,12 +124,10 @@
     text-align: center;
     font-size: 14px;
     line-height: 1.21;
+    max-width: 415px;
   }
 
   .profile__edit-button {
-    background: transparent url(../images/pencil.svg) no-repeat center;
-    background-size: 7.5px;
-    border: 1px solid #fff;
     width: 18px;
     height: 18px;
     margin: 0;
